@@ -1,13 +1,15 @@
 .loader {
   width: 40px;
   height: 20px;
-  --c: no-repeat radial-gradient(farthest-side, #000 93%, #0000);
+  --c: no-repeat radial-gradient(farthest-side, #fff 93%, #ffff);
   background: var(--c) 0 0,
   var(--c) 50% 0,
   var(--c) 100% 0;
   background-size: 8px 8px;
-  position: relative;
   animation: l4-0 1s linear infinite alternate;
+  position: absolute;
+  right: -65px;
+  top: 90px;
 }
 
 .loader:before {
@@ -15,7 +17,7 @@
   position: absolute;
   width: 8px;
   height: 12px;
-  background: #000;
+  background: #fff;
   left: 0;
   top: 0;
   animation: l4-1 1s linear infinite alternate,
@@ -53,7 +55,9 @@
 }
 
 .wrapper {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
