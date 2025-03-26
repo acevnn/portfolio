@@ -1,0 +1,16 @@
+.header {
+  &__list-wrapper {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  &__list-item {
+
+  }
+
+  &__social {
+    display: flex;
+    gap: 1rem;
+  }
+}

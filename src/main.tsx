@@ -3,11 +3,21 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Loader from "./components/Loader/Loader.tsx";
+import Layout from "./components/Routes/Layout.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Loader />,
+    element: <Layout />,
+    children: [
+      {
+        path: "/wip",
+        element: <Loader />,
+      },
+      {
+        path: "/",
+      },
+    ],
   },
 ]);
 
