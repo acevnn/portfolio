@@ -7,7 +7,7 @@ import InstagramIcon from "../../assets/Icons/InstagramIcon.tsx";
 function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles["header__about-me-wrapper"]}>
+      <div className={styles["header__about-wrapper"]}>
         <h1>
           <Link to="/">Nino Acev</Link>
         </h1>
@@ -17,9 +17,15 @@ function Header() {
         </p>
         <nav className={styles["header__nav"]}>
           <ul>
-            <li>About</li>
-            <li>Experience</li>
-            <li>Projects</li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
           </ul>
         </nav>
       </div>
