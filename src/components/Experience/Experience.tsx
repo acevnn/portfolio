@@ -1,5 +1,5 @@
 import styles from "./Experience.module.scss";
-import { AnchorProps } from "../About/About.tsx";
+import { AnchorProps } from "../interfaces.ts";
 
 export default function Experience({ experience }: AnchorProps) {
   return (

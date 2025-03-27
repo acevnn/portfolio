@@ -26,6 +26,9 @@ function Header() {
             <li>
               <a href="#projects">Projects</a>
             </li>
+            <li>
+              <a href="#reviews">Reviews</a>
+            </li>
           </ul>
         </nav>
       </div>

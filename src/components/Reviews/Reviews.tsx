@@ -1,6 +1,8 @@
-export default function Reviews() {
+import { AnchorProps } from "../interfaces.ts";
+
+export default function Reviews({ reviews }: AnchorProps) {
   return (
-    <ul>
+    <ul id={reviews}>
       <h2>Performance Reviews</h2>
       <li>
         <h4>Dimitar Hristoskov</h4>
@@ -14,7 +16,7 @@ export default function Reviews() {
       <li>
         <h4>Steven Buxton</h4>
         <p>
-          Highly motivated, nice perosnality, always tries to do his best, very
+          Highly motivated, nice personality, always tries to do his best, very
           invested in the success of the project!
         </p>
       </li>

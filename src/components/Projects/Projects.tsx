@@ -1,4 +1,4 @@
-import { AnchorProps } from "../About/About.tsx";
+import { AnchorProps } from "../interfaces.ts";
 
 export default function Projects({ projects }: AnchorProps) {
   return (

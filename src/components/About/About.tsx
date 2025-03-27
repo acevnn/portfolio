@@ -1,10 +1,5 @@
 import styles from "./About.module.scss";
-
-export type AnchorProps = {
-  about?: string;
-  experience?: string;
-  projects?: string;
-};
+import { AnchorProps } from "../interfaces.ts";
 
 function About({ about }: AnchorProps) {
   return (

@@ -1,4 +1,4 @@
-import { IconProps } from "./interfaces.ts";
+import { IconProps } from "../../components/interfaces.ts";
 
 export default function InstagramIcon({ width, height, classname }: IconProps) {
   console.log(typeof classname);
