@@ -1,4 +1,20 @@
 .header {
+  position: relative;
+  min-width: 50%;
+  //height: 100%;
+
+  &__about-wrapper {
+    position: fixed;
+    top: 0;
+  }
+
+  &__social {
+    position: fixed;
+    display: flex;
+    gap: 1rem;
+    bottom: 0;
+  }
+
   &__list-wrapper {
     display: flex;
     gap: 1rem;
@@ -9,8 +25,5 @@
 
   }
 
-  &__social {
-    display: flex;
-    gap: 1rem;
-  }
+
 }

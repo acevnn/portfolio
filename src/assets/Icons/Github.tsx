@@ -1,11 +1,10 @@
-import { IconProps } from "./interfaces.ts";
+import { IconProps } from "../../components/interfaces.ts";
 
 function GithubIcon({ width, height, classname }: IconProps) {
   return (
     <svg
       className={classname}
       id="Bold"
-      enable-background="new 0 0 24 24"
       height={height}
       viewBox="0 0 24 24"
       width={width}
