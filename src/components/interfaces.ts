@@ -10,3 +10,7 @@ export type AnchorProps = {
   projects?: string;
   reviews?: string;
 };
+
+export type TagProps = {
+  items: string[];
+};

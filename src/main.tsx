@@ -1,9 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
+import "./styles/main.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./components/Routes/Layout.tsx";
-import Loader from "./components/Loader/Loader.tsx";
+import Layout from "./components/Routes/Layout";
+import Loader from "./components/Loader/Loader";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +27,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <div className="app-wrapper">
+      <RouterProvider router={router} />
+    </div>
   </StrictMode>,
 );

@@ -1,4 +1,4 @@
-import { AnchorProps } from "../interfaces.ts";
+import { AnchorProps } from "../interfaces";
 
 export default function Reviews({ reviews }: AnchorProps) {
   return (
@@ -37,7 +37,7 @@ export default function Reviews({ reviews }: AnchorProps) {
           always strives to do the best in his work, to help and understand
           other perspectives. I recommend him for future collaboration.
         </p>
-        <h5>Areas for improvement</h5>
+        <h4>Areas for improvement</h4>
         <p>
           To be self-corrective, since he has the necessary expertise to deliver
           best in class solutions in work.

@@ -1,0 +1,8 @@
+@use '../../styles/abstract/mixins' as mixins;
+
+.tag {
+  display: flex;
+  color: white;
+  gap: 1rem;
+  @include mixins.font(400, 14, 24, 0);
+}

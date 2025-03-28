@@ -1,23 +1,49 @@
 import styles from "./Experience.module.scss";
-import { AnchorProps } from "../interfaces.ts";
+import Tag from "../Tag/Tag";
 
-export default function Experience({ experience }: AnchorProps) {
+export default function Experience() {
   return (
     <>
-      <h2 id={experience}>Experience in progress!</h2>
-      <section>
-        <div className={styles.experience}>
-          <header>2021 — present</header>
-          <div className={styles["experience__wrapper"]}>
-            <h4>Associate/Mid-level Frontend Engineer @ Valtech</h4>
-            <p>
-              Build and maintain web applications for various clients and craft
-              solutions for the needs. Working as a service company, Valtech I
-              had the opportunity to work on diverse projects in different
-              teams.{" "}
-            </p>
-          </div>
-        </div>
+      <h2
+        className={styles["heading-experience"]}
+        id="experience"
+        data-id="experience"
+      >
+        Experience
+      </h2>
+      <section className={styles.experience}>
+        <ol className={styles["experience__wrapper"]}>
+          <li>
+            <header>2021 — present</header>
+            <div className={styles["experience__container"]}>
+              <h3 className={styles["experience__heading"]}>
+                Frontend Engineer @ Valtech
+              </h3>
+              <p>
+                Build, style, and ship high-quality websites, design systems and
+                cross platform digital experiences for a diverse array of
+                clients using technologies such as JavaScript, TypeScript,
+                React, Next.js, CSS, AEM(Adobe Experience Manager), Contentful,
+                and more.
+              </p>
+              <Tag items={["eden", "dva", "tri"]} />
+            </div>
+          </li>
+          <li>
+            <header>2021 — present</header>
+            <div className={styles["experience__container"]}>
+              <h3 className={styles["experience__heading"]}>
+                Frontend Engineer @ Valtech
+              </h3>
+              <p>
+                Build, style, and ship high-quality websites, design systems and
+                cross platform digital experiences for a diverse array of
+                clients.
+              </p>
+              <Tag items={["React", "Next.js", "TypeScript", "JavaScript"]} />
+            </div>
+          </li>
+        </ol>
       </section>
     </>
   );
