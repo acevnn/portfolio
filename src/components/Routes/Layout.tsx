@@ -14,9 +14,9 @@ export default function Layout() {
 
       <main className={styles["main-wrapper"]}>
         <Outlet />
-        <About about="about" />
-        <Experience experience="experience" />
-        <Projects projects="projects" />
+        <About />
+        <Experience />
+        <Projects />
         <Reviews reviews="reviews" />
       </main>
       {/*<Loader />*/}
