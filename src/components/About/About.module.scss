@@ -1,5 +1,17 @@
+@use '../../styles/abstract/mixins';
+
 .about {
-  &__section {
-    margin-bottom: 1rem;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+  line-height: 26px;
+  margin-bottom: 4rem;
+}
+
+.heading-about {
+  padding-top: 1rem;
+  text-transform: uppercase;
+
+  @include mixins.font(700, 14, 20, 1.4);
 }

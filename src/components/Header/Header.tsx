@@ -1,10 +1,13 @@
-import styles from "./Header.module.scss";
 import { Link } from "react-router-dom";
-import GithubIcon from "../../assets/Icons/Github.tsx";
-import LinkedinIcon from "../../assets/Icons/LinkedinIcon.tsx";
-import InstagramIcon from "../../assets/Icons/InstagramIcon.tsx";
+import GithubIcon from "@/assets/Icons/Github";
+import LinkedinIcon from "@/assets/Icons/LinkedinIcon";
+import InstagramIcon from "@/assets/Icons/InstagramIcon";
+import styles from "./Header.module.scss";
+import { SECTION_IDS } from "@/constants/sectionIds";
+import { useMediaQuery } from "react-responsive";
 
 function Header() {
+  const isMobile = useMediaQuery({ maxWidth: 991 });
   return (
     <header className={styles.header}>
       <div className={styles["header__about-wrapper"]}>
@@ -12,25 +15,28 @@ function Header() {
           <Link to="/">Nino Acev</Link>
         </h1>
         <h2>Front End Engineer</h2>
-        <p>
-          I build accessible, pixel-perfect digital experiences for the web.
+        <p className={styles["header__intro"]}>
+          I build accessible, pixel-perfect and user-friendly digital
+          experiences for the web.
         </p>
-        <nav className={styles["header__nav"]}>
-          <ul>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#experience">Experience</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#reviews">Reviews</a>
-            </li>
-          </ul>
-        </nav>
+        {!isMobile && (
+          <nav>
+            <ul className={styles["header__nav"]}>
+              <li>
+                <a href={`#${SECTION_IDS.ABOUT}`}>About</a>
+              </li>
+              <li>
+                <a href={`#${SECTION_IDS.EXPERIENCE}`}>Experience</a>
+              </li>
+              <li>
+                <a href={`#${SECTION_IDS.PROJECTS}`}>Projects</a>
+              </li>
+              <li>
+                <a href={`#${SECTION_IDS.REVIEWS}`}>Reviews</a>
+              </li>
+            </ul>
+          </nav>
+        )}
       </div>
       <ul className={styles["header__social"]}>
         <li>
@@ -39,7 +45,7 @@ function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <GithubIcon width={32} height={32} classname="icon" />
+            <GithubIcon width={24} height={24} classname="icon" />
           </a>
         </li>
         <li>
@@ -48,7 +54,7 @@ function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <LinkedinIcon width={32} height={32} classname="icon" />
+            <LinkedinIcon width={24} height={24} classname="icon" />
           </a>
         </li>
         <li>
@@ -57,7 +63,7 @@ function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <InstagramIcon width={32} height={32} classname="icon" />
+            <InstagramIcon width={24} height={24} classname="icon" />
           </a>
         </li>
       </ul>

@@ -1,4 +1,4 @@
-import { IconProps } from "../../components/interfaces.ts";
+import { IconProps } from "@/components/interfaces";
 
 function GithubIcon({ width, height, classname }: IconProps) {
   return (
