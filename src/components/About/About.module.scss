@@ -1,4 +1,4 @@
-@use '../../styles/abstract/mixins';
+@use '@/styles/abstract/mixins';
 
 .about {
   display: flex;
@@ -7,6 +7,7 @@
   padding-top: 2rem;
   line-height: 26px;
   margin-bottom: 4rem;
+  color: rgb(148, 163, 184);
 }
 
 .heading-about {

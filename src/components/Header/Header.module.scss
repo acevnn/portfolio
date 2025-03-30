@@ -8,12 +8,24 @@
   justify-content: space-between;
 
   &__about-wrapper {
+    //max-width: 50%;
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    //position: fixed;
-    //top: 60px;
+    @include media-query('lg') {
+      position: fixed;
+      max-width: 49%;
+      //top: 60px;
+    }
+
+
+    @include media-query('md') {
+      flex-direction: row;
+    }
+    @include media-query('lg') {
+      flex-direction: column;
+    }
 
     h1 {
       @include font(700, 36, 40, -0.9);
@@ -29,11 +41,13 @@
       @include font(500, 18, 28, -0.45);
       color: #D4DDEE
     }
+  }
 
-
-    @include media-query('sm') {
-      position: relative;
-    }
+  &__summary {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
   }
 
   &__intro {
@@ -46,6 +60,11 @@
     gap: 1rem;
     bottom: 0;
     margin: 32px 0 0 4px;
+
+    @include media-query('lg') {
+      position: fixed;
+      bottom: 48px;
+    }
   }
 
   &__nav {
@@ -63,5 +82,14 @@
     display: flex;
     gap: 1rem;
     padding: 0;
+  }
+
+  &__profile-picture {
+    width: 100%;
+    max-width: 263px;
+    height: auto;
+    margin-bottom: 12px;
+
+
   }
 }
