@@ -1,9 +1,11 @@
-import { AnchorProps } from "../interfaces";
+import styles from "@/components/Projects/Projects.module.scss";
 
-export default function Reviews({ reviews }: AnchorProps) {
+export default function Reviews() {
   return (
-    <ul id={reviews}>
-      <h2>Performance Reviews</h2>
+    <ul id="reviews">
+      <h2 className={styles["heading-reviews"]} id="reviews" data-id="reviews">
+        Performance Reviews
+      </h2>
       <li>
         <h4>Dimitar Hristoskov</h4>
         <p>

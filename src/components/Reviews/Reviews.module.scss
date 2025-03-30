@@ -1,0 +1,8 @@
+@use '@/styles/abstract/mixins' as *;
+
+.heading-reviews {
+  padding-top: 1rem;
+  text-transform: uppercase;
+
+  @include font(700, 14, 20, 1.4);
+}

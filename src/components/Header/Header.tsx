@@ -5,20 +5,52 @@ import InstagramIcon from "@/assets/Icons/InstagramIcon";
 import styles from "./Header.module.scss";
 import { SECTION_IDS } from "@/constants/sectionIds";
 import { useMediaQuery } from "react-responsive";
+import profileImage from "@/assets/NA-Photo.png";
+import { motion } from "framer-motion";
 
 function Header() {
   const isMobile = useMediaQuery({ maxWidth: 991 });
+  const variants = {
+    desktop: {
+      x: -50,
+      opacity: 0,
+      transition: { duration: 0.8, delay: 0.3 },
+    },
+    mobile: {
+      x: -50,
+      opacity: 0,
+      transition: { duration: 0.8, delay: 0.3 },
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: { duration: 0.8, delay: 0.3 },
+    },
+  };
   return (
     <header className={styles.header}>
       <div className={styles["header__about-wrapper"]}>
-        <h1>
-          <Link to="/">Nino Acev</Link>
-        </h1>
-        <h2>Front End Engineer</h2>
-        <p className={styles["header__intro"]}>
-          I build accessible, pixel-perfect and user-friendly digital
-          experiences for the web.
-        </p>
+        <img
+          className={styles["header__profile-picture"]}
+          src={profileImage}
+          alt="Profice picture of Nikola-Nino Acev"
+        />
+        <motion.div
+          variants={variants}
+          initial={isMobile ? "mobile" : "desktop"}
+          animate="animate"
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className={styles["header__summary"]}
+        >
+          <h1>
+            <Link to="/">Nino Acev</Link>
+          </h1>
+          <h2>Front End Engineer</h2>
+          <p className={styles["header__intro"]}>
+            I build accessible, pixel-perfect and user-friendly digital
+            experiences for the web.
+          </p>
+        </motion.div>
         {!isMobile && (
           <nav>
             <ul className={styles["header__nav"]}>
