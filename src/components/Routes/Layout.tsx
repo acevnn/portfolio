@@ -11,13 +11,13 @@ export default function Layout() {
   return (
     <>
       <Header />
-
+      <p>change</p>
       <main className={styles["main-wrapper"]}>
         <Outlet />
         <About />
         <Experience />
         <Projects />
-        <Reviews reviews="reviews" />
+        <Reviews />
       </main>
       {/*<Loader />*/}
     </>
