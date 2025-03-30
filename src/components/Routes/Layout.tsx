@@ -17,7 +17,7 @@ export default function Layout() {
         <About />
         <Experience />
         <Projects />
-        <Reviews reviews="reviews" />
+        <Reviews />
       </main>
       {/*<Loader />*/}
     </>
