@@ -26,6 +26,13 @@
     @include media-query('lg') {
       flex-direction: column;
     }
+  }
+
+  &__summary {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 
     h1 {
       @include font(700, 36, 40, -0.9);
@@ -36,22 +43,18 @@
         color: #D4DDEE
       }
     }
-
-    h2 {
-      @include font(500, 18, 28, -0.45);
-      color: #D4DDEE
-    }
   }
 
-  &__summary {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+  &__heading-intro {
+    color: #D4DDEE;
+    margin-top: 0.5rem;
+    @include font(500, 18, 24, -0.45);
   }
 
   &__intro {
+    margin-top: 1rem;
     color: #6B7B9A;
+    @include font(500, 16, 24, -0.45);
   }
 
   &__social {
@@ -71,11 +74,11 @@
     display: flex;
     gap: 0.5rem;
     justify-content: center;
+  }
 
-    li {
-      color: #D4DDEE;
-    }
-
+  &__list-item {
+    text-transform: capitalize;
+    color: #D4DDEE;
   }
 
   &__list-wrapper {

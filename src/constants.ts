@@ -1,4 +1,6 @@
-const REVIEWS = [
+export const sectionIds = ["about", "experience", "projects", "reviews"];
+
+export const REVIEWS = [
   {
     name: "Dimitar Hristoskov",
     paragraph:
@@ -20,5 +22,3 @@ const REVIEWS = [
       "Working on the project as a team with Nino was very seamless for me in communicating and solving day to day tasks. Nino is responsive and always strives to do the best in his work, to help and understand other perspectives. I recommend him for future collaboration.",
   },
 ];
-
-export default REVIEWS;
