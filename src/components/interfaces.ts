@@ -4,13 +4,6 @@ export interface IconProps {
   classname?: string;
 }
 
-export type AnchorProps = {
-  about?: string;
-  experience?: string;
-  projects?: string;
-  reviews?: string;
-};
-
 export type TagProps = {
   items: string[];
 };
