@@ -18,14 +18,11 @@
 
 @supports (font-variation-settings: normal) {
   :root {
-    font-family: InterVariable, sans-serif;
+    font-family: var(--font-family), sans-serif;
   }
 }
 
 html {
-  font-family: var(--font-family), sans-serif;
-  font-weight: var(--font-weight-base);
-  line-height: var(--line-height-base);
   color: var(--color-text);
   background-color: var(--color-bg);
   font-synthesis: none;
