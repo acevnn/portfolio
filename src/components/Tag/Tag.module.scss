@@ -1,8 +1,20 @@
-@use '../../styles/abstract/mixins' as mixins;
+@use '@/styles/abstract/mixins' as *;
 
 .tag {
   display: flex;
-  color: white;
+  flex-wrap: wrap;
+  color: #DBFF00;
   gap: 1rem;
-  @include mixins.font(400, 14, 24, 0);
+
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #DBFF001A;
+    background-color: #DBFF001A;
+    padding: 10px 18px;
+    border-radius: 1.2rem;
+    @include font(500, 13, 18, 0);
+  }
+
 }

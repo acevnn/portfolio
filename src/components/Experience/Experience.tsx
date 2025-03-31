@@ -26,7 +26,7 @@ export default function Experience() {
                 React, Next.js, CSS, AEM(Adobe Experience Manager), Contentful,
                 and more.
               </p>
-              <Tag items={["eden", "dva", "tri"]} />
+              <Tag items={["AEM", "Contentful", "SCSS"]} />
             </div>
           </li>
           <li>

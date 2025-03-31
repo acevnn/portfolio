@@ -5,7 +5,9 @@ export default function Tag({ items }: TagProps) {
   return (
     <ul className={styles.tag}>
       {items.map((item, index) => (
-        <li key={index}>{item}</li>
+        <li className={styles["tag__item"]} key={index}>
+          {item}
+        </li>
       ))}
     </ul>
   );
