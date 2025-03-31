@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import GithubIcon from "@/assets/Icons/Github";
 import LinkedinIcon from "@/assets/Icons/LinkedinIcon";
-import InstagramIcon from "@/assets/Icons/InstagramIcon";
 import styles from "./Header.module.scss";
-import { SECTION_IDS } from "@/constants/sectionIds";
+import { sectionIds } from "@/constants";
 import { useMediaQuery } from "react-responsive";
 import profileImage from "@/assets/NA-Photo.png";
 import { motion } from "framer-motion";
@@ -27,6 +26,7 @@ function Header() {
       transition: { duration: 0.8, delay: 0.3 },
     },
   };
+
   return (
     <header className={styles.header}>
       <div className={styles["header__about-wrapper"]}>
@@ -45,7 +45,9 @@ function Header() {
           <h1>
             <Link to="/">Nino Acev</Link>
           </h1>
-          <h2>Front End Engineer</h2>
+          <h2 className={styles["header__heading-intro"]}>
+            Front End Engineer
+          </h2>
           <p className={styles["header__intro"]}>
             I build accessible, pixel-perfect and user-friendly digital
             experiences for the web.
@@ -54,18 +56,14 @@ function Header() {
         {!isMobile && (
           <nav>
             <ul className={styles["header__nav"]}>
-              <li>
-                <a href={`#${SECTION_IDS.ABOUT}`}>About</a>
-              </li>
-              <li>
-                <a href={`#${SECTION_IDS.EXPERIENCE}`}>Experience</a>
-              </li>
-              <li>
-                <a href={`#${SECTION_IDS.PROJECTS}`}>Projects</a>
-              </li>
-              <li>
-                <a href={`#${SECTION_IDS.REVIEWS}`}>Reviews</a>
-              </li>
+              {sectionIds.map((id) => (
+                <li
+                  className={styles["header__list-item"]}
+                  key={Math.random().toString()}
+                >
+                  <a href={`#${id}`}>{id}</a>
+                </li>
+              ))}
             </ul>
           </nav>
         )}
@@ -87,15 +85,6 @@ function Header() {
             rel="noopener noreferrer"
           >
             <LinkedinIcon width={24} height={24} classname="icon" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/nino.acev/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <InstagramIcon width={24} height={24} classname="icon" />
           </a>
         </li>
       </ul>
