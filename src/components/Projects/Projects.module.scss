@@ -45,6 +45,12 @@
 
     }
   }
+
+  &__external-link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 .heading-project {

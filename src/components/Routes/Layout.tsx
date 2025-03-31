@@ -11,7 +11,6 @@ export default function Layout() {
   return (
     <>
       <Header />
-      <p>change</p>
       <main className={styles["main-wrapper"]}>
         <Outlet />
         <About />
@@ -19,7 +18,6 @@ export default function Layout() {
         <Projects />
         <Reviews />
       </main>
-      {/*<Loader />*/}
     </>
   );
 }

@@ -6,3 +6,33 @@
 
   @include font(700, 14, 20, 1.4);
 }
+
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 2rem;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+  }
+
+  &__list-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    span {
+      @include font(700, 16, 19, 0);
+    }
+
+    p {
+      color: rgb(148, 163, 184);
+      @include font(350, 14, 21, -0.5);
+    }
+
+  }
+}
