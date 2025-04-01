@@ -4,7 +4,6 @@ function GithubIcon({ width, height, classname }: IconProps) {
   return (
     <svg
       className={classname}
-      id="Bold"
       height={height}
       viewBox="0 0 24 24"
       width={width}

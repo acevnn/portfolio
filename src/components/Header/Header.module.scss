@@ -19,13 +19,20 @@
       //top: 60px;
     }
 
-
     @include media-query('md') {
       flex-direction: row;
     }
+
     @include media-query('lg') {
       flex-direction: column;
     }
+  }
+
+  &__profile-picture {
+    width: 100%;
+    max-width: 263px;
+    height: auto;
+    margin-bottom: 1.5rem;
   }
 
   &__summary {
@@ -35,8 +42,7 @@
     justify-content: center;
 
     h1 {
-      @include font(700, 36, 40, -0.9);
-
+      margin-bottom: 0.75rem;
 
       a {
         @include font(700, 36, 40, -0.9);
@@ -47,27 +53,96 @@
 
   &__heading-intro {
     color: #D4DDEE;
-    margin-top: 0.5rem;
+    margin-bottom: 1rem;
     @include font(500, 18, 24, -0.45);
   }
 
   &__intro {
-    margin-top: 1rem;
+    margin-bottom: 1.5rem;
     color: #6B7B9A;
     @include font(500, 16, 24, -0.45);
+  }
+
+  &__cta-wrapper {
+    margin-bottom: 4rem;
+  }
+
+  &__cta {
+    padding: 0.5rem 1rem;
+    background-color: #0048FF;
+    border-radius: 0.5rem;
+    margin-right: 2.5rem;
+    @include font(500, 18, 34, 0);
+  }
+
+  @keyframes glow-expand {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.6;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(2.5);
+      opacity: 0;
+    }
+  }
+
+  &__circle {
+    position: relative;
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-right: 1rem;
+    background-color: #DBFF00;
+    border-radius: 50%;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: #DBFF00;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      animation: glow-expand 1.5s infinite ease;
+      opacity: 0.2;
+      z-index: -1;
+    }
   }
 
   &__social {
     position: relative;
     display: flex;
+    align-items: center;
     gap: 1rem;
     bottom: 0;
-    margin: 32px 0 0 4px;
+    margin-left: 4px;
+
+    li:last-child {
+      margin-left: auto;
+    }
 
     @include media-query('lg') {
       position: fixed;
       bottom: 48px;
     }
+
+    &-icon {
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  &__resume {
+    background: #D3D3F5;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    color: #000;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
   }
 
   &__nav {
@@ -85,14 +160,5 @@
     display: flex;
     gap: 1rem;
     padding: 0;
-  }
-
-  &__profile-picture {
-    width: 100%;
-    max-width: 263px;
-    height: auto;
-    margin-bottom: 12px;
-
-
   }
 }
