@@ -4,7 +4,7 @@
   padding-top: 1rem;
   text-transform: uppercase;
 
-  @include font(700, 14, 20, 1.4);
+  @include font(700, 18, 20, 1.4);
 }
 
 .reviews {
@@ -25,7 +25,7 @@
     flex-wrap: wrap;
     gap: 0.5rem;
 
-    span {
+    h3 {
       @include font(700, 16, 19, 0);
     }
 
