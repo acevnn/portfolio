@@ -1,0 +1,8 @@
+.mouse-light {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(120px); /* softer light spread */
+  transition: background 0.05s ease;
+}

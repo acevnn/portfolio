@@ -23,9 +23,9 @@ export default function Projects() {
               alt="an image of the link for pokemon first generation web app"
             />
             <div className={styles["project__external-link"]}>
-              <span>
+              <h4>
                 Pokemon Browsing Cards — In Progress <ExternalLink size={12} />
-              </span>
+              </h4>
               <p>
                 A mobile-first web application built with Next.js, styled using
                 SCSS modules. The app leverages Next.js Image component for
