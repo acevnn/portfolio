@@ -5,5 +5,5 @@ export interface IconProps {
 }
 
 export type TagProps = {
-  items?: string[];
+  items: string[] | [];
 };
