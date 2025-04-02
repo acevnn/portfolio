@@ -2,21 +2,18 @@
 
 .header {
   position: relative;
-  min-width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  min-width: 50%;
 
   &__about-wrapper {
-    //max-width: 50%;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
     @include media-query('lg') {
+      width: 350px;
       position: fixed;
-      max-width: 49%;
-      //top: 60px;
+      top: 7rem;
     }
 
     @include media-query('md') {
@@ -124,8 +121,9 @@
     }
 
     @include media-query('lg') {
-      position: fixed;
-      bottom: 3rem;
+      //position: fixed;
+      bottom: 0;
+      margin-top: 4rem;
     }
 
     &-icon {
@@ -149,12 +147,79 @@
     display: flex;
     gap: 0.5rem;
     justify-content: center;
+    flex-direction: column;
   }
 
   &__list-item {
+    position: relative;
     text-transform: capitalize;
     color: #D4DDEE;
   }
+
+  //&__link {
+  //  color: #D3D3F5;
+  //  text-decoration: none;
+  //  font-size: 1.2rem;
+  //  padding-left: 1rem;
+  //  transition: color 0.3s ease, transform 0.3s ease;
+  //}
+  //
+  //&__link--active {
+  //  position: relative;
+  //  font-weight: 600;
+  //
+  //  &::before {
+  //    content: '';
+  //    position: absolute;
+  //    left: 0;
+  //    top: 50%;
+  //    transform: translateY(-50%);
+  //    height: 3px;
+  //    width: 2rem;
+  //    background-color: #DBFF00;
+  //    border-radius: 2px;
+  //    z-index: 1;
+  //  }
+  //}
+
+  &__link {
+    color: #D3D3F5;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: translateX(0);
+    position: relative;
+
+    &--active {
+      font-weight: 600;
+      transform: translateX(32px);
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -1.75rem;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 4px;
+        width: 0;
+        background-color: #DBFF00;
+        border-radius: 2px;
+        animation: growLine 0.3s forwards cubic-bezier(0.25, 1, 0.5, 1);
+      }
+    }
+  }
+
+  @keyframes growLine {
+    from {
+      width: 0;
+    }
+    to {
+      width: 2.5rem;
+    }
+  }
+
 
   &__list-wrapper {
     display: flex;
