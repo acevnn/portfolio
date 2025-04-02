@@ -5,9 +5,20 @@
   flex-direction: column;
   gap: 1rem;
   padding-top: 2rem;
-  line-height: 26px;
+  line-height: 1.65rem;
   margin-bottom: 4rem;
   color: rgb(148, 163, 184);
+
+  ul {
+    li {
+      margin-bottom: 1rem;
+      line-height: 1.5;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
 }
 
 .heading-about {

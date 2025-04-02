@@ -45,7 +45,7 @@ function Header() {
         <h1>
           <Link to="/">Nino Acev</Link>
         </h1>
-        <h2 className={styles["header__heading-intro"]}>Front End Engineer</h2>
+        <h2 className={styles["header__heading-intro"]}>Front End Developer</h2>
         <p className={styles["header__intro"]}>
           I build accessible, pixel-perfect and user-friendly digital
           experiences for the web.
@@ -62,10 +62,7 @@ function Header() {
         <nav>
           <ul className={styles["header__nav"]}>
             {sectionIds.map((id) => (
-              <li
-                className={styles["header__list-item"]}
-                key={Math.random().toString()}
-              >
+              <li className={styles["header__list-item"]} key={id}>
                 <a href={`#${id}`}>{id}</a>
               </li>
             ))}
@@ -75,6 +72,7 @@ function Header() {
       <ul className={styles["header__social"]}>
         <li>
           <a
+            className={styles["header__social-icon"]}
             href="https://github.com/acevnn"
             target="_blank"
             rel="noopener noreferrer"
