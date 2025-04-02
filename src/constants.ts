@@ -92,7 +92,7 @@ export const REVIEWS = [
   },
   {
     id: 3,
-    name: "Orest",
+    name: "Orest Palidovych",
     paragraph:
       "Nino is a highly experienced frontend developer, known for being a reliable team player with strong skills in analyzing and breaking down tasks for accurate estimations and incremental development. Nice person to work with.",
   },
