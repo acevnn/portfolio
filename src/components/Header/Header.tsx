@@ -62,10 +62,7 @@ function Header() {
         <nav>
           <ul className={styles["header__nav"]}>
             {sectionIds.map((id) => (
-              <li
-                className={styles["header__list-item"]}
-                key={Math.random().toString()}
-              >
+              <li className={styles["header__list-item"]} key={id}>
                 <a href={`#${id}`}>{id}</a>
               </li>
             ))}

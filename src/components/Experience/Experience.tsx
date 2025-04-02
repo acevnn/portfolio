@@ -17,7 +17,7 @@ export default function Experience() {
       <section className={styles.experience}>
         <ul className={styles["experience__wrapper"]}>
           {EXPERIENCES.map((experience) => (
-            <li key={Math.random()}>
+            <li key={experience.id}>
               <header>{experience.time}</header>
               <div className={styles["experience__container"]}>
                 <h3 className={styles["experience__heading"]}>
