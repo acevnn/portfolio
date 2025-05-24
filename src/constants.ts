@@ -103,3 +103,54 @@ export const REVIEWS = [
       "Working on the project as a team with Nino was very seamless for me in communicating and solving day to day tasks. Nino is responsive and always strives to do the best in his work, to help and understand other perspectives. I recommend him for future collaboration.",
   },
 ];
+
+export const WEBSTORE = [
+  {
+    id: 1,
+    heading: "Tech Stack Overview",
+  },
+  {
+    id: 2,
+    backend: "Backend (PHP 8.2 + GraphQL + MySQL",
+  },
+  {
+    id: 3,
+    paragraph:
+      "The backend is built entirely in pure PHP 8.2, following clean OOP architecture. It features a fully custom GraphQL API using webonyx/graphql-php, supporting dynamic category and product resolution with class-based mapping (e.g., 'clothes' => ClothesProduct::class). Database access is securely handled via PDO prepared statements, and all GraphQL queries are routed through a single index.php entry point. The environment runs inside a Dockerized Apache + PHP container, complete with Composer autoloading, Apache rewrite configuration, and optimized image size through a clean .dockerignore setup. The backend is deployed on Render.com, exposing a single GraphQL endpoint with full CORS support for frontend integration.",
+  },
+  {
+    id: 4,
+    frontend: "Frontend (React + Vite + TypeScript)",
+  },
+  {
+    id: 5,
+    paragraph:
+      "The frontend is a single-page React application built with TypeScript and Vite, featuring fast load times and modular structure. It uses React Router for navigation and Zustand for global state management, especially in managing a responsive cart overlay with real-time quantity updates. Styling is implemented using SCSS modules with a mobile-first, BEM-inspired approach. Data is fetched from the backend via a lightweight custom GraphQL client using native fetch. The application is deployed on Netlify as a static site, with environment variable support for dynamic GraphQL endpoints.",
+  },
+];
+
+export const POKEMON = [
+  {
+    id: 1,
+    heading: "Tech Stack Overview",
+  },
+  {
+    id: 2,
+    frontend: "Frontend (React + Vite + TypeScript)",
+  },
+  {
+    id: 3,
+    paragraph:
+      "A mobile-first web application built with Next.js and styled using SCSS Modules, designed to deliver a smooth and responsive browsing experience for Pokémon enthusiasts. The layout adapts gracefully across devices, featuring a hamburger-triggered drawer menu on smaller screens for intuitive navigation.",
+  },
+  {
+    id: 4,
+    paragraph:
+      "A key feature is the infinite scroll mechanism, which loads 20 additional Pokémon entries as the user scrolls down. This approach enhances the browsing experience by reducing initial load times and progressively rendering content as needed.",
+  },
+  {
+    id: 5,
+    paragraph:
+      "The application fetches Pokémon data server-side from a public API, transforms it, and passes it efficiently to components via Next.js' rendering pipeline. Leveraging the Next.js Image component, the app ensures optimized image loading, contributing to strong performance and visual clarity.",
+  },
+];

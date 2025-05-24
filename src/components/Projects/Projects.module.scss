@@ -33,21 +33,48 @@
       @include font(700, 10, 20, 1.4);
     }
 
-    p {
-      color: rgb(148, 163, 184);
-      @include font(500, 14, 21, -0.5);
-    }
-
     svg {
       margin-left: 0.25rem;
     }
+  }
+
+  &__project-heading {
+    @include font(500, 18, 20, 1.4);
+
+    @include media-query('md') {
+      @include font(500, 24, 20, 1.4);
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__list-item {
+    color: rgb(148, 163, 184);
+    padding-left: 8px;
+    @include font(350, 14, 21, -0.5);
+    margin-bottom: 0.5rem;
+  }
+
+  &__sub-heading {
+    margin-bottom: 0.5rem;
+    color: #fff;
+    padding-left: 4px;
+    @include font(300, 16, 21, -0.5);
+  }
+
+  &__tech-stack {
+    @include font(500, 18, 21, -0.5);
+    margin-bottom: 0.75rem;
+  }
+
+  &__items-wrapper {
+    margin-bottom: 8px;
   }
 
   &__external-link {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    @include font(500, 16, 20, 1.4);
+
 
   }
 }
