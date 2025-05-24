@@ -46,7 +46,7 @@ export const EXPERIENCES = [
     time: "2019 Aug — 2019 Nov",
     role: "Intern @ INSCALE ",
     paragraph:
-      "Microsoft-based company developing software using the C# programming language within the .NET framework. Gained hands-on experience with the Model-View-Controller (MVC) design pattern, understanding how it organizes code into models (data), views (UI), and controllers (application logic).",
+      "Microsoft-based company developing software using C# programming language within the .NET framework. Gained hands-on experience with the Model-View-Controller (MVC) design pattern, understanding how it organizes code into models (data), views (UI), and controllers (application logic).",
     tags: ["C#", ".NET", "MVC"],
   },
   {

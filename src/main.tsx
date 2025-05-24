@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     // ],
   },
   {
-    path: "/suja",
+    path: "/loader",
     element: <Loader />,
   },
 ]);

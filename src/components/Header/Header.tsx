@@ -8,8 +8,33 @@ import profileImage from "@/assets/NA-Photo.png";
 import { motion } from "framer-motion";
 import { FileDown } from "lucide-react";
 import { useScrollSpy } from "@/hooks";
+// import { animate, createScope, createSpring } from "animejs";
+// import { useEffect, useRef } from "react";
 
 function Header() {
+  // const root = useRef<HTMLDivElement | null>(null);
+  // const scope = useRef<ReturnType<typeof createScope> | null>(null);
+  // const profilePictureRef = useRef<HTMLImageElement | null>(null);
+  //
+  // console.log(Object.keys(animate));
+  //
+  // useEffect(() => {
+  //   if (!root.current || !profilePictureRef.current) return;
+  //
+  //   scope.current = createScope({ root: root.current }).add((scope) => {
+  //     animate(profilePictureRef.current!, {
+  //       scale: [
+  //         { to: 1.25, ease: "inOut(3)", duration: 200 },
+  //         { to: 1, ease: createSpring({ stiffness: 300 }) },
+  //       ],
+  //       loop: true,
+  //       loopDelay: 250,
+  //     });
+  //   });
+  //
+  //   return () => scope.current?.revert();
+  // }, []);
+
   const isMobile = useMediaQuery({ maxWidth: 991 });
   const variants = {
     desktop: {

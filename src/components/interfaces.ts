@@ -4,6 +4,6 @@ export interface IconProps {
   classname?: string;
 }
 
-export type TagProps = {
+export interface TagProps {
   items: string[] | [];
-};
+}
