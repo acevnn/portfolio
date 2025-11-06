@@ -13,7 +13,7 @@ export const ABOUT = [
   {
     id: 2,
     paragraph:
-      "          I’m currently a Mid-level/Senior Developer open to new opportunities.\n" +
+      "          Web Developer with 6+ years of experience in the field.\n" +
       "          During my time at Valtech, I’ve contributed to building and\n" +
       "          maintaining UI components and solutions that power various projects,\n" +
       "          ensuring our clients meet web accessibility standards and best\n" +
@@ -27,8 +27,8 @@ export const ABOUT = [
   {
     id: 4,
     paragraph:
-      "          Outside of work, you’ll often find me hiking, working out, painting,\n" +
-      "          or just taking some rest and gaming at home on my PC.",
+      "          Outside of work, you’ll often find me hiking, working out, playing some games of chess, draw some sketches,\n" +
+      "          or just taking some rest",
   },
 ];
 
@@ -73,6 +73,31 @@ export const EXPERIENCES = [
       "AEM",
       "Contentful",
       "TypeScript",
+    ],
+  },
+  {
+    id: 5,
+    time: "2025 — Currently working here",
+    role: "Web Developer @ Vestel Global",
+    paragraph: [
+      "Leading the frontend development and rebranding of a project using Next.js 15, React 19, TypeScript, and SCSS Modules. \n \n",
+      "Designed and implemented a multilingual system \n (English, Macedonian, Albanian) using next-intl with \n middleware-based locale detection and structured translations. \n\n ",
+      "Built and refactored modular UI components (Drawer, Sidebar, Tag, Accordion, EventCard, MenuBar, Footer) ensuring scalability, accessibility, and performance. \n\n",
+      "Defined and implemented the project’s high-level architecture for two major frontend applications, focusing on structure, scalability, and maintainability. \n\n",
+      "Assisting and mentoring junior developers, providing guidance on TypeScript typing, component composition, and best practices for Next.js app router architecture. \n\n",
+      "Optimized build configuration (next.config.ts, SCSS imports, image handling) for both local and production environments. \n\n",
+      "Collaborating closely with design and backend teams to achieve pixel-perfect UI alignment from Figma and smooth integration with API data. \n",
+    ],
+    tags: [
+      "Web Developer",
+      "Front-End",
+      "Next.js",
+      "React 19",
+      "TypeScript",
+      "SCSS Modules",
+      "Zustand",
+      "next-intl",
+      "ESLint/Prettier",
     ],
   },
 ];

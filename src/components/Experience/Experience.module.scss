@@ -5,8 +5,10 @@
   padding-top: 2rem;
   flex-direction: column;
   margin-bottom: 4rem;
+  white-space: pre-line;
 
   header {
+    width: 10rem;
     min-width: 10rem;
     text-transform: uppercase;
   }

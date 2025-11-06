@@ -3,8 +3,6 @@ import { EXPERIENCES } from "@/constants";
 import Tag from "@/components/Tag/Tag";
 
 export default function Experience() {
-  console.table(EXPERIENCES);
-
   return (
     <>
       <h2
