@@ -133,7 +133,7 @@ function Header() {
           <li>
             <a
               className={styles["header__resume"]}
-              href="/Nikola-Nino%20Acev_CV.pdf"
+              href="/Nikola-Nino-Acev_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

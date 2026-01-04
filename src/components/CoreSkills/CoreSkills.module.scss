@@ -1,0 +1,35 @@
+@use '@/styles/abstract/mixins' as *;
+
+.skill {
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+
+  &__container {
+    display: flex;
+    padding-block: 0.25rem;
+    flex-wrap: wrap;
+    white-space: pre-line;
+
+    &:first-of-type {
+      padding-top: 0;
+    }
+  }
+
+  &__skills {
+    p {
+      color: rgb(148, 163, 184);
+      @include font(500, 14, 21, -0.5);
+    }
+  }
+
+  &__heading {
+    margin-right: 4px;
+    @include font(500, 16, 20, 0);
+  }
+}
+
+.skill-title {
+  padding-top: 1rem;
+  text-transform: uppercase;
+  @include font(700, 14, 20, 1.4);
+}

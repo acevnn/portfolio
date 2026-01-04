@@ -1,9 +1,10 @@
 @use '@/styles/abstract/mixins' as *;
 
 .experience {
+  position: relative;
   display: flex;
-  padding-top: 2rem;
   flex-direction: column;
+  padding-top: 2rem;
   margin-bottom: 4rem;
   white-space: pre-line;
 
@@ -11,32 +12,17 @@
     width: 10rem;
     min-width: 10rem;
     text-transform: uppercase;
+    color: #5F6E85;
+    @include font(600, 12, 16, 0.3);
   }
 
   &__wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 1.5rem;
     padding: 0;
     margin: 0;
-
-    li {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-
-      @include media-query('md') {
-        flex-direction: row;
-
-      }
-
-      header {
-        color: #5F6E85;
-        @include font(600, 12, 16, 0.3);
-      }
-    }
   }
-
 
   &__container {
     display: flex;
@@ -47,10 +33,6 @@
       color: rgb(148, 163, 184);
       @include font(500, 14, 21, -0.5);
     }
-
-    @include media-query('md') {
-      display: flex;
-    }
   }
 
   &__heading {
@@ -58,9 +40,55 @@
   }
 }
 
+.progress {
+  position: absolute;
+  right: -5.5rem;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
+.progress::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--progress, 0%);
+  background: #dbff00;
+  transition: height 0.15s linear;
+}
+
+.experience__wrapper li {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @include media-query('md') {
+    flex-direction: row;
+  }
+}
+
+.experience__wrapper li.reveal:nth-child(1) {
+  transition-delay: 0.05s;
+}
+
+.experience__wrapper li.reveal:nth-child(2) {
+  transition-delay: 0.12s;
+}
+
+.experience__wrapper li.reveal:nth-child(3) {
+  transition-delay: 0.19s;
+}
+
+.experience__wrapper li.reveal:nth-child(4) {
+  transition-delay: 0.26s;
+}
+
 .heading-experience {
   padding-top: 1rem;
   text-transform: uppercase;
-
   @include font(700, 14, 20, 1.4);
 }

@@ -11,7 +11,10 @@ export default function Reviews() {
         <ul className={styles["reviews__wrapper"]}>
           {REVIEWS.map((review) => {
             return (
-              <li key={review.id} className={styles["reviews__list-item"]}>
+              <li
+                key={review.id}
+                className={`${styles["reviews__list-item"]} reveal`}
+              >
                 <h3>{review.name}</h3>
                 <p>{review.paragraph}</p>
               </li>

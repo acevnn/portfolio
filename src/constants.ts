@@ -179,3 +179,55 @@ export const POKEMON = [
       "The application fetches Pokémon data server-side from a public API, transforms it, and passes it efficiently to components via Next.js' rendering pipeline. Leveraging the Next.js Image component, the app ensures optimized image loading, contributing to strong performance and visual clarity.",
   },
 ];
+
+export const CORE_SKILLS = [
+  {
+    id: 1,
+    heading: "Frontend",
+    paragraph:
+      "React, Next.js (App Router), TypeScript, JavaScript (ES6+), SCSS Modules, CSS Architecture (BEM), Responsive/Mobile-first UI",
+  },
+  {
+    id: 2,
+    heading: "Architecture",
+    paragraph:
+      "Component systems, Design Systems, scalable folder architecture, custom hooks, BFF patterns",
+  },
+  {
+    id: 3,
+    heading: "Rendering Models",
+    paragraph: "SSR, SSG, ISR, CSR",
+  },
+  {
+    id: 4,
+    heading: "State Management",
+    paragraph: "Zustand, React Context",
+  },
+  {
+    id: 5,
+    heading: "API",
+    paragraph:
+      "REST, GraphQL, caching strategies, data hydration, ISR revalidation",
+  },
+  {
+    id: 6,
+    heading: "CMS",
+    paragraph: "Contentful, AEM",
+  },
+  {
+    id: 7,
+    heading: "Tooling",
+    paragraph: "Git, GitHub, Storybook, Docker, ESLint, Vite, Next-Intl",
+  },
+  {
+    id: 8,
+    heading: "Design",
+    paragraph: "Figma, UI implementation, pixel-perfect alignment",
+  },
+  {
+    id: 9,
+    heading: "Soft Skills",
+    paragraph:
+      "Independent ownership, communication, mentoring, cross-team collaboration",
+  },
+];
