@@ -4,31 +4,22 @@ export const ABOUT = [
   {
     id: 1,
     paragraph:
-      "          I’m a developer passionate about crafting accessible, pixel-perfect\n" +
-      "          user interfaces that blend thoughtful design with robust engineering.\n" +
-      "          My favorite work lies at the intersection of design and development,\n" +
-      "          creating experiences that not only look great but are meticulously\n" +
-      "          built for performance and usability.",
+      "I’m a frontend developer with 5+ years of experience crafting accessible, pixel-perfect interfaces that balance thoughtful design with robust engineering. I specialize in building high-quality user experiences where performance, usability, and visual precision go hand in hand.",
   },
   {
     id: 2,
     paragraph:
-      "          Web Developer with 6+ years of experience in the field.\n" +
-      "          During my time at Valtech, I’ve contributed to building and\n" +
-      "          maintaining UI components and solutions that power various projects,\n" +
-      "          ensuring our clients meet web accessibility standards and best\n" +
-      "          practices for an inclusive user experience.",
+      "My work sits at the intersection of design and development. I enjoy turning complex requirements into clean, scalable UI solutions—paying close attention to responsiveness, accessibility standards, and long-term maintainability.",
   },
   {
     id: 3,
     paragraph:
-      "Before transitioning fully into frontend after graduating, I worked as a cybersecurity engineer—and had the chance to develop a website for the Intelligence Agency of North Macedonia.",
+      "Before focusing fully on frontend development, I worked as a cybersecurity engineer after graduating, where I also contributed to building a website for the Intelligence Agency of North Macedonia—an experience that shaped my attention to detail, security, and reliability.",
   },
   {
     id: 4,
     paragraph:
-      "          Outside of work, you’ll often find me hiking, working out, playing some games of chess, draw some sketches,\n" +
-      "          or just taking some rest",
+      "Outside of work, I enjoy hiking, working out, playing chess, sketching ideas, and taking time to recharge—activities that help me stay focused, curious, and creative.",
   },
 ];
 

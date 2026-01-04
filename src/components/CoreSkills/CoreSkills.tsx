@@ -8,7 +8,7 @@ export default function CoreSkills() {
       <section className={styles.skill}>
         <ul className={styles["skill__skills"]}>
           {CORE_SKILLS.map((skill) => (
-            <div className={styles["skill__container"]}>
+            <div key={skill.id} className={styles["skill__container"]}>
               <h3 className={styles["skill__heading"]}>{skill.heading}:</h3>
               <p>{skill.paragraph}</p>
             </div>
