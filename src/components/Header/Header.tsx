@@ -75,7 +75,7 @@ function Header() {
             <Link to="/">Nino Acev</Link>
           </h1>
           <h2 className={styles["header__heading-intro"]}>
-            Front End Developer
+            Frontend Web Engineer
           </h2>
           <p className={styles["header__intro"]}>
             I build accessible, pixel-perfect and user-friendly digital

@@ -4,7 +4,7 @@ export const ABOUT = [
   {
     id: 1,
     paragraph:
-      "I’m a frontend developer with 5+ years of experience crafting accessible, pixel-perfect interfaces that balance thoughtful design with robust engineering. I specialize in building high-quality user experiences where performance, usability, and visual precision go hand in hand.",
+      "I’m a Frontend Web Engineer with 5+ years of experience crafting accessible, pixel-perfect interfaces that balance thoughtful design with robust engineering. I specialize in building high-quality user experiences where performance, usability, and visual precision go hand in hand.",
   },
   {
     id: 2,
