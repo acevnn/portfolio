@@ -69,7 +69,7 @@ export const EXPERIENCES = [
   {
     id: 5,
     time: "2025 — Currently working here",
-    role: "Web Developer @ Vestel Global",
+    role: "Web Engineer @ Vestel Global",
     paragraph: [
       "Leading the frontend development and rebranding of a project using Next.js 15, React 19, TypeScript, and SCSS Modules. \n \n",
       "Designed and implemented a multilingual system \n (English, Macedonian, Albanian) using next-intl with \n middleware-based locale detection and structured translations. \n\n ",
@@ -80,7 +80,7 @@ export const EXPERIENCES = [
       "Collaborating closely with design and backend teams to achieve pixel-perfect UI alignment from Figma and smooth integration with API data. \n",
     ],
     tags: [
-      "Web Developer",
+      "Web Engineer",
       "Front-End",
       "Next.js",
       "React 19",
